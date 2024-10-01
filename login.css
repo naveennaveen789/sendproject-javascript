@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+
+}
+body{
+    background: gainsboro;
+    background: url(./images/Tesla-PNG-white.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    /* transform: translate(-50%, -50%); */
+    z-index: 2;
+    margin-top: 800px;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.container h1{
+    color: orangered;
+    font-size: 36px;
+    margin-bottom: 40px;
+    /* background:gray ; */
+    background: rgba(0,0,0,0.6);
+    box-shadow: 6px 6px 19px -4px rgba(0,0,0,0.75);
+    border-radius: 5px;
+    padding: 10px 10px;
+    font-family: sans-serif;
+    font-weight: bold;
+    
+}
+.container h1:hover{
+    color: white;
+    cursor: pointer;
+}
+.button{
+    background: white;
+    padding: 10px 15px;
+    color: grey;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 6px 6px 19px -4px rgba(0,0,0,0.75);
+    margin-top: 25px;
+    transition: 0.3s ease;
+}
+.button:hover{
+    background: gray;
+    color: white;
+}
+.popup{
+    background: rgba(0,0,0,0.6);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.popup-condent{
+    height: 250px;
+    width: 500px;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+}
+.popup-condent img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+input{
+    margin: 20px auto;
+    display: block;
+    width: 50%;
+    padding: 8px;
+    border: 1px solid gray;
+
+}
+.close{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    top: -50px;
+    right: -15px;
+    background: white;
+    box-shadow: 6px 6px 19px -4px rgba(0,0,0,0.75);
+    cursor: pointer;
+
+}
