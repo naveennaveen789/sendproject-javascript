@@ -7,7 +7,8 @@
     list-style: none;
 }
 body{
-    background: gainsboro;
+    background: gray;
+    
 }
 header{
     position: fixed;
@@ -74,7 +75,6 @@ span{
 .home{
     width: 100%;
     min-height: 100vh;
-    /* background: rgba(255, 255, 255, 0.938); */
     background: url(./images/tesla_car_black.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -87,11 +87,18 @@ span{
 }
 .home-condent{
     max-width: 800px;
+    
+    
 }
 .home-condent p{
-    font-size: 18px;
+    font-size: 20px;
     margin: 25px 0 30px;
     color: orangered;
+    font-size: 30px;
+}
+.heading{
+    font-size: 70px;
+    display: flex;
 }
 .home-1{
     width: 100%;
@@ -100,15 +107,15 @@ span{
     display: flex;
     align-items: center;
     gap: 7em;
-    padding: 30px 12% 0;
-
+    padding: 300px 12% 0;
+    
 }
 .home-condent-1{
     max-width: 800px;
 }
  
 .home-condent-1 p{
-    font-size: 18px;
+    font-size: 20px;
     margin: 25px 0 30px;
     /* color: black; */
 }
@@ -119,8 +126,7 @@ span{
     background: rgba(255, 255, 255, 0.938);
     display: flex;
     align-items: center;
-    gap: 7em;
-    padding: 30px 12% 0;
+    padding: 300px 12% 0;
 
 }
 .home-condent-2{
@@ -128,17 +134,24 @@ span{
 }
  
 .home-condent-2 p{
-    font-size: 18px;
+    font-size: 20px;
     margin: 25px 0 30px;
-    /* color: black; */
+    padding: 30px;
+    
+}
+.home-condent-2 h3{
+    font-size: 30px;
+    line-height: 2;
 }
 
 
 .img-box img{
-    width: 550px;
-    box-shadow: 0 0 25px orangered,
-                0 0  50px orangered;
+    width: 450px;
+    box-shadow: 0 0 25px grey,
+                0 0  50px gray;
     border-radius: 5%;
+    display: inline-block;
+
 
 }
 .home-3{
@@ -148,15 +161,18 @@ span{
     display: flex;
     align-items: center;
     gap: 7em;
-    padding: 30px 12% 0;
+    padding: 300px 12% 0;
+    
+    
 
 }
 .home-condent-3{
     max-width: 800px;
+    padding: 30px;
 }
  
 .home-condent-3 p{
-    font-size: 18px;
+    font-size: 20px;
     margin: 25px 0 30px;
     /* color: black; */
 }
@@ -166,6 +182,7 @@ span{
     width: 100%;
     padding: 40px 0;
     background-color: black;
+    
 }
  .footer ul{
     margin-top: 0;
@@ -181,7 +198,7 @@ span{
     transition: 0.3s ease;
 }
 .footer ul li a:hover{
-    border-bottom: 3px solid orangered;
+    border-bottom: 3px solid white;
 }
 .footer ul li{
     display: inline-block;
@@ -200,11 +217,13 @@ span{
    /* margin-left: 300px; */
    align-items: center;
    justify-content: center;
+   background: white;
 
 }
 .btn{
     padding: 10px 10px;
     margin: 20px;
+    border-radius: 5px;
 }
 .btn:hover{
     background: orangered;
@@ -216,9 +235,33 @@ span{
     transition: 0.3s ease;
     background-attachment: fixed;
 }
-.img-box{
-    display: inline-block;
-}
+.img-box img{
+    display: flex;
 
+     
+}
+@media only screen  and (max-width:1024px){
+    .home-1{
+        display: block;
+        text-align: center;
+
+    }
+    .home-2{
+        display: block;
+        text-align: center;
+         
+    }
+    .home-3{
+        display: block;
+        text-align: center;
+    }
+    
+}
+@media only screen  and (max-width:375px){
+    .img-box img{
+        width: 95%;
+    }
+    
+}
 
  

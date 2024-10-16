@@ -6,8 +6,8 @@
     <title>Teslahome</title>
     <link rel="stylesheet" href="home.css">
     <link rel="icon" href="./images/logo-tesla-blank.jpeg">
-    <!-- <link rel="images" href="./images/logo-tesla-blank.jpeg"> -->
-
+    
+     <!-- cdn link // -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
@@ -20,7 +20,7 @@
             <a href="http://127.0.0.1:5500/service.html#">Services</a>
             <a href="#">Models</a>
             <a href="http://127.0.0.1:5500/index.html">TeslaChat</a>
-            <a href="#">Comming Models</a>
+            
 
         </nav>
 
@@ -30,7 +30,7 @@
 
     <section class="home">
         <div class="home-condent">
-            <h3>Hello..</h3>
+            <h3><b> Hello..</b></h3>
             <h1>i'm <span>Tesla</span> luxury electric hot Tesla's car... </h1>
             <p>The trendsetting Model S elevates the notion of a luxury electric hot hatch to futuristic
             new levels. Tesla's most expensive car offers more range than 
@@ -69,28 +69,37 @@
     </section>
 
 
-    <section class="contact-form">
-        <h2 class="contact-me">Contact <span>Us</span></h2>
-
-        <form action="">
+     
+    <div class="contact-form">
+        <form action="" id="form">
+            <h1 class="contact-me">Contact <span>Us</span></h1>
+            <br>
             <div class="input-box">
-                <input type="text" placeholder="Full Name" class="text">
-                <input type="email" placeholder="Email" class="email">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Full Name" class="text">
+                <div class="error"></div>
             </div>
-
             <div class="input-box">
-                <input type="number" placeholder="Phone Number" class="number">
-                <input type="text" placeholder="Opinion" class="text2">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Email" class="email" >
+                <div class="error"></div>
             </div>
-
+            <div class="input-box">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="password" class="password">
+                <div class="error"></div>
+            </div>
+            <div class="input-box">
+                <label for="cpassword">Confirm Password</label>
+                <input type="password" id="cpassword" name="cpassword">
+                <div class="error"></div>
+            </div>
             <textarea  cols="30" rows="10" placeholder="Your Message" class="textarea"></textarea>
-
-
-            <button type="submit" value="send Message"  class="btn-1" onclick="fill()">Send</button>
-
+            <button type="submit" value="send Message"  class="btn-1"  >Confirm</button>
+            <button type="submit" class="btn-2"  onclick="fill()">Send</button>
         </form>
+    </div>
 
-    </section>
 
 
 

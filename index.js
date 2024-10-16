@@ -24,7 +24,6 @@ const handleChate= () => {
 
     setTimeout( () => {
      /// waiting the response
-    // chatbox.appendChild(craeteChatLi("Thinging....", "incomming"));
     chatbox.appendChild(craeteChatLi("hello Iam Tesla", "incomming"));
     chatbox.appendChild(craeteChatLi("Have a nice day..what you think", "incomming"));
     chatbox.appendChild(craeteChatLi("Comming soon Next model", "incomming"));

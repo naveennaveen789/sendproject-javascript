@@ -8,19 +8,34 @@
 }
 body{
     background: gainsboro;
-    background: url(./images/Tesla-PNG-white.png);
+    background: url(./images/tesla_car_black.png);
     background-position: center;
     background-repeat: no-repeat;
-    /* transform: translate(-50%, -50%); */
     z-index: 2;
     margin-top: 800px;
+    
 }
+ 
 .container{
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+   
+     
+}
+.container h2{
+    color: orangered;
+    font-size: 36px;
+    margin-bottom: 40px;
+    filter: drop-shadow(10px 10px 20px orangered);
+    /* background: rgba(0,0,0,0.6); */
+    border-radius: 5px;
+    padding: 10px 10px;
+    font-family: sans-serif;
+    font-weight: bold;
+    
 }
 .container h1{
     color: orangered;
